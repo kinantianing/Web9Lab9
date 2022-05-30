@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
   $sql .= "VALUE ('{$nama}', '{$kategori}','{$harga_jual}', '{$harga_beli}', '{$stok}', '{$gambar}')";
   $result = mysqli_query($conn, $sql);
   
-  header('location: index.php');
+  header('location: home.php');
 }
 ?>
 

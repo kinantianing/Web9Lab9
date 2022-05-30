@@ -32,7 +32,7 @@
         $sql .= "WHERE id_barang = '{$id}'";
         $result = mysqli_query($conn, $sql);
 
-        header('location: index.php');
+        header('location: home.php');
     }
     $id_barang = $_GET['id_barang'];
     $sql = "SELECT * FROM data_barang WHERE id_barang = '{$id_barang}'";
